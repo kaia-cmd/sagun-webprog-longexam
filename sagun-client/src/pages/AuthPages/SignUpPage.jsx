@@ -71,7 +71,7 @@ const SignUpPage = () => {
           </p>
         </div>
 
-        <Button type="submit" variant="primary" className={actionButtonClassName}>
+        <Button to="/" type="submit" variant="primary" className={actionButtonClassName}>
           Create Account
         </Button>
 

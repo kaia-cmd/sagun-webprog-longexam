@@ -1,5 +1,8 @@
 import Button from '../../components/Button';
 import banner from '../../assets/img/nu_bulldogex_banner.jpg';
+import saleProd1 from '../../assets/img/sale_prod1.jpg';
+import saleProd2 from '../../assets/img/sale_prod2.jpg';
+import saleProd7 from '../../assets/img/sale_prod7.jpg';
 
 const HomePage = () => {
     return (
@@ -7,7 +10,7 @@ const HomePage = () => {
             <section className="relative min-h-[28rem] overflow-hidden border-y-2 border-zinc-900 bg-zinc-900 px-4 py-10 sm:px-6 lg:px-8">
                 <img
                     src={banner}
-                    alt=""
+                    alt="banner"
                     className="absolute inset-0 h-full w-full object-cover"
                 />
                 <div className="absolute inset-0 bg-zinc-900/45" />
@@ -83,29 +86,29 @@ const HomePage = () => {
                 <div className="grid gap-4 md:grid-cols-3">
                     <article className="rounded-3xl border-2 border-zinc-900 bg-zinc-100 p-4">
                         <div className="flex aspect-4/3 items-center justify-center rounded-[1.25rem] bg-zinc-200">
-                            <div className="h-12 w-12 border-2 border-zinc-300 bg-zinc-100" />
+                            <img src={saleProd1} alt="Daily Essentials" className="h-full w-full object-cover" />
                         </div>
-                        <h3 className="mt-4 text-lg font-semibold text-zinc-900">Daily Essentials</h3>
+                        <h3 className="mt-4 text-lg font-semibold text-zinc-900">Accessories</h3>
                         <p className="mt-3 text-sm leading-6 text-zinc-600">
-                            Bags, tumblers, lanyards, and items used every school day.
+                            Lanyards, bag tags, and everyday add-ons.
                         </p>
                         <Button to="/products" className="mt-4" variant="primary">View Products</Button>
                     </article>
 
                     <article className="rounded-3xl border-2 border-zinc-900 bg-zinc-100 p-4">
                         <div className="flex aspect-4/3 items-center justify-center rounded-[1.25rem] bg-zinc-200">
-                            <div className="h-12 w-12 border-2 border-zinc-300 bg-zinc-100" />
+                            <img src={saleProd7} alt="Drinkware" className="h-full w-full object-cover" />
                         </div>
-                        <h3 className="mt-4 text-lg font-semibold text-zinc-900">Study Supplies</h3>
+                        <h3 className="mt-4 text-lg font-semibold text-zinc-900">Drinkware</h3>
                         <p className="mt-3 text-sm leading-6 text-zinc-600">
-                            Notes, desk tools, and study kits for class and review weeks.
+                            Tumblers, bottles, and other drink-related items.
                         </p>
-                        <Button to="/products" className="mt-4" variant="primary">Shop Supplies</Button>
+                        <Button to="/products" className="mt-4" variant="primary">Shop Drinkware</Button>
                     </article>
 
                     <article className="rounded-3xl border-2 border-zinc-900 bg-zinc-100 p-4">
                         <div className="flex aspect-4/3 items-center justify-center rounded-[1.25rem] bg-zinc-200">
-                            <div className="h-12 w-12 border-2 border-zinc-300 bg-zinc-100" />
+                            <img src={saleProd2} alt="Campus Apparel" className="h-full w-full object-cover" />
                         </div>
                         <h3 className="mt-4 text-lg font-semibold text-zinc-900">Campus Apparel</h3>
                         <p className="mt-3 text-sm leading-6 text-zinc-600">

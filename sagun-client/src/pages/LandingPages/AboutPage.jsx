@@ -1,5 +1,9 @@
 import Button from '../../components/Button';
 import logo from '../../assets/img/nubdexchange_logo.png';
+import saleProd1 from '../../assets/img/sale_prod1.jpg';
+import saleProd2 from '../../assets/img/sale_prod2.jpg';
+import saleProd7 from '../../assets/img/sale_prod7.jpg';
+import saleProd8 from '../../assets/img/sale_prod8.jpg';
 
 const AboutPage = () => {
   return (
@@ -17,11 +21,12 @@ const AboutPage = () => {
               About Store
             </p>
             <h1 className="max-w-xl text-3xl font-bold leading-tight text-zinc-900 sm:text-4xl">
-              A campus shop focused on useful products and simple ordering.
+              Campus essentials meet school spirit—all in one shop.
             </h1>
             <p className="mt-4 max-w-lg text-sm leading-7 text-zinc-600 sm:text-base">
-              BulldogEx Shop keeps the low-fidelity layout system while presenting clear
-              product categories, quick actions, and straightforward store information.
+              Your go-to campus marketplace for student essentials, quality apparel, and
+              official merch. Browse curated collections, place orders effortlessly, and pick
+              up fast—everything you need for campus life in one stop.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
               <Button to="/" variant="primary">
@@ -105,19 +110,42 @@ const AboutPage = () => {
             <p className="text-[11px] font-semibold uppercase tracking-[0.28em] text-zinc-500">
               Category Grid
             </p>
+            <p className="mt-2 text-sm leading-6 text-zinc-600">
+              Browse the main product groups available in BulldogEx Shop.
+            </p>
             <div className="mt-5 grid gap-4 sm:grid-cols-2">
-              <div className="flex aspect-square items-center justify-center rounded-[1.25rem] bg-zinc-200">
-                <div className="h-12 w-12 border-2 border-zinc-300 bg-zinc-100" />
-              </div>
-              <div className="flex aspect-square items-center justify-center rounded-[1.25rem] bg-zinc-200">
-                <div className="h-12 w-12 border-2 border-zinc-300 bg-zinc-100" />
-              </div>
-              <div className="flex aspect-square items-center justify-center rounded-[1.25rem] bg-zinc-200">
-                <div className="h-12 w-12 border-2 border-zinc-300 bg-zinc-100" />
-              </div>
-              <div className="flex aspect-square items-center justify-center rounded-[1.25rem] bg-zinc-200">
-                <div className="h-12 w-12 border-2 border-zinc-300 bg-zinc-100" />
-              </div>
+              <article className="rounded-[1.25rem] border-2 border-zinc-900 bg-zinc-50 p-4">
+                <p className="text-[10px] font-semibold uppercase tracking-[0.2em] text-zinc-500">01</p>
+                <div className="flex aspect-4/3 items-center justify-center rounded-[1.25rem] bg-zinc-200">
+                  <img src={saleProd1} alt="BulldogEx" className="h-full w-full object-cover" />
+                </div>
+                <h3 className="mt-2 text-base font-semibold text-zinc-900">Accessories</h3>
+                <p className="mt-2 text-xs leading-5 text-zinc-600">Lanyards, bag tags, and everyday add-ons.</p>
+              </article>
+              <article className="rounded-[1.25rem] border-2 border-zinc-900 bg-zinc-50 p-4">
+                <p className="text-[10px] font-semibold uppercase tracking-[0.2em] text-zinc-500">02</p>
+                <div className="flex aspect-4/3 items-center justify-center rounded-[1.25rem] bg-zinc-200">
+                  <img src={saleProd2} alt="BulldogEx" className="h-full w-full object-cover" />
+                </div>
+                <h3 className="mt-2 text-base font-semibold text-zinc-900">Apparel</h3>
+                <p className="mt-2 text-xs leading-5 text-zinc-600">Campus-ready caps, jackets, and outerwear.</p>
+              </article>
+              <article className="rounded-[1.25rem] border-2 border-zinc-900 bg-zinc-50 p-4">
+                <p className="text-[10px] font-semibold uppercase tracking-[0.2em] text-zinc-500">03</p>
+                <div className="flex aspect-4/3 items-center justify-center rounded-[1.25rem] bg-zinc-200">
+                  <img src={saleProd7} alt="BulldogEx" className="h-full w-full object-cover" />
+                </div>
+                <h3 className="mt-2 text-base font-semibold text-zinc-900">Drinkware</h3>
+                <p className="mt-2 text-xs leading-5 text-zinc-600">Hydration picks from jugs to insulated flasks.</p>
+              </article>
+              <article className="rounded-[1.25rem] border-2 border-zinc-900 bg-zinc-50 p-4">
+                <p className="text-[10px] font-semibold uppercase tracking-[0.2em] text-zinc-500">04</p>
+                <div className="flex aspect-4/3 items-center justify-center rounded-[1.25rem] bg-zinc-200">
+                  <img src={saleProd8} alt="BulldogEx" className="h-full w-full object-cover" />
+                </div>
+                <h3 className="mt-2 text-base font-semibold text-zinc-900">Gifts</h3>
+                <p className="mt-2 text-xs leading-5 text-zinc-600">Collectibles and giftable items for school spirit.</p>
+              </article>
             </div>
             <Button to="/products" className="mt-5">View Products</Button>
           </div>

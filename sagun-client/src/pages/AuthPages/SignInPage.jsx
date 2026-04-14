@@ -54,7 +54,7 @@ const SignInPage = () => {
           </button>
         </div>
 
-        <Button type="submit" variant="primary" className={actionButtonClassName}>
+        <Button to="/" type="submit" variant="primary" className={actionButtonClassName}>
           Log In
         </Button>
 
